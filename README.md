@@ -33,11 +33,11 @@
 Destination URL : /connect
 
 {
-    "clientTime" : 클라이언트 시간,
+    "clientTime" : 클라이언트 시간(String),
     "tables" : [
         {
-            "id" : 테이블 번호,
-            "fireStatus" : 불 상태
+            "id" : 테이블 번호(Number),
+            "fireStatus" : 불 상태(String)
         },
         ...
     ] 
@@ -52,14 +52,14 @@ Destination URL : /connect
 Subscribe URL : /topic/connect
 
 {
-    "serverTime" : 서버시간,
-    "sessionCount" : 현재 연결된 세션 수,
+    "serverTime" : 서버시간(String),
+    "sessionCount" : 현재 연결된 세션 수(Number),
     "data" : {
-        "clientTime" : 최초 연결 시간,
+        "clientTime" : 최초 연결 시간(String),
         "tables" : [
             {
-                "id" : 테이블 번호,
-                "fireStatus" : 불 상태
+                "id" : 테이블 번호(Number),
+                "fireStatus" : 불 상태(String)
             },
             ...
         ]
@@ -87,13 +87,13 @@ Destination URL : /change/fireStatus
 Subscribe URL : /topic/change/fireStatus
 
 {
-    "serverTime" : 서버시간,
-    "sessionCount" : 현재 연결된 세션 수,
+    "serverTime" : 서버시간(String),
+    "sessionCount" : 현재 연결된 세션 수(Number),
     "data" : {
         "tables" : [
             {
-                "id" : 테이블 번호,
-                "fireStatus" : 불 상태
+                "id" : 테이블 번호(Number),
+                "fireStatus" : 불 상태(String)
             },
             ...
         ]
@@ -109,8 +109,8 @@ Subscribe URL : /topic/change/fireStatus
 Subscribe URL : /topic/disconnect
 
 {
-    "serverTime" : 서버시간,
-    "sessionCount" : 현재 연결된 세션 수,
+    "serverTime" : 서버시간(String),
+    "sessionCount" : 현재 연결된 세션 수(Nmuber),
     "data" : null
 }
 ```
